@@ -1,0 +1,158 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.title {
+  font-size: 64px;
+}
+
+.basicPadding {
+  padding: 160px 0;
+}
+
+.item-margin {
+  margin: 0 12px;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Bruno Ace SC", cursive, serif;
+}
+body a {
+  text-decoration: none;
+}
+body img {
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+.header {
+  background: black;
+  padding-top: 40px;
+}
+.header ul {
+  justify-content: center;
+}
+.header li {
+  width: 306px;
+  margin-right: 61px;
+}
+.header li:last-child {
+  width: 196px;
+  text-align: end;
+  margin-right: 0;
+}
+.header a {
+  color: #D1D1D1;
+}
+
+.main .hello {
+  background: black;
+  justify-content: center;
+  padding: 72px 0;
+}
+.main .hello .article {
+  width: 636px;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .hello .article p {
+  color: #FFFFFF;
+}
+.main .hello .article h1 {
+  color: #00FFA3;
+  font-size: 128px;
+  text-align: end;
+}
+.main .hello .article .contact {
+  margin-left: auto;
+}
+.main .hello .article a {
+  background: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: 32px;
+}
+.main .introduction {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+  padding: 160px 0;
+  justify-content: center;
+}
+.main .introduction .article {
+  width: 526px;
+}
+.main .introduction .article h2 {
+  color: #FFFFFF;
+  margin-bottom: 36px;
+}
+.main .introduction .article p {
+  color: #FFFFFF;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.footer {
+  background: black;
+  padding: 40px 0;
+}
+.footer p {
+  text-align: center;
+  color: #FFFFFF;
+}/*# sourceMappingURL=week2.css.map */

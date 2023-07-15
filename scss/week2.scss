@@ -1,0 +1,118 @@
+// 各類import
+@import "reset";
+@import "mixin";
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro&display=swap');
+
+// 變數
+$basic-font-size: 16px;
+$basic-block-padding: 160px;
+// 顏色
+$main-color: black;
+$header-link-color:#D1D1D1;
+$light-color: #FFFFFF;
+
+// 樣式
+.d-flex{
+    display: flex;
+}
+.title{
+    font-size:  $basic-font-size * 4;;
+}
+.basicPadding{
+    padding: 160px 0;
+}
+.item-margin{
+    margin: 0 12px;
+}
+
+// 通用
+body{
+    line-height: 1.5;
+    font-family: 'Bruno Ace SC', cursive, serif;
+    a{
+        text-decoration: none;
+    }
+    img{
+        vertical-align: top;
+    }
+}
+
+
+.container{
+    max-width: 1920px;
+}
+
+.header{
+    background: $main-color;
+    padding-top: 40px;
+    ul{
+        justify-content: center;
+    }
+    li{
+        width: 306px;
+        margin-right: 61px;
+        &:last-child{
+            width: 196px;
+            text-align: end;
+            margin-right: 0;
+        }
+    }
+    a{
+        color: $header-link-color;
+    }
+}
+
+.main{
+    .hello{
+        background: $main-color;
+        justify-content: center;
+        padding: $basic-block-padding * 0.45 0;
+        .article{
+            width: 636px;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                color: $light-color;
+            }
+            h1{
+                color: #00FFA3;
+                font-size: $basic-font-size * 8;
+                text-align: end;
+            }
+            .contact{
+                margin-left: auto;
+            }
+            a{
+                background: $light-color;
+                padding: 12px 24px;
+                border-radius: 32px;
+            }
+        }
+    }
+    .introduction{
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+        padding: $basic-block-padding 0;
+        justify-content: center;
+        .article{
+            width: 526px;
+            h2{
+                color: $light-color;
+                margin-bottom: 36px;
+            }
+            p{
+                color: $light-color;
+                font-size: 24px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+.footer{
+    background: $main-color;
+    padding: 40px 0;
+    p{
+        text-align: center;
+        color: $light-color;
+    }
+}
