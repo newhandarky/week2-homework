@@ -102,15 +102,6 @@ img {
   color: #D1D1D1;
 }
 
-.footer {
-  background: black;
-  padding: 40px 0;
-}
-.footer p {
-  text-align: center;
-  color: #FFFFFF;
-}
-
 .hello {
   background: black;
   justify-content: center;
@@ -239,4 +230,13 @@ img {
 }
 .myProjects .photo :first-child {
   margin-right: 24px;
+}
+
+.footer {
+  background: black;
+  padding: 40px 0;
+}
+.footer p {
+  text-align: center;
+  color: #FFFFFF;
 }/*# sourceMappingURL=week2.css.map */
