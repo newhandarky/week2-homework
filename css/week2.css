@@ -132,7 +132,6 @@ body img {
 }
 .main .introduction {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
-  padding: 160px 0;
   justify-content: center;
 }
 .main .introduction .article {
@@ -146,6 +145,41 @@ body img {
   color: #FFFFFF;
   font-size: 24px;
   margin-bottom: 32px;
+}
+.main .aboutMe {
+  justify-content: center;
+}
+.main .aboutMe .card {
+  width: 636px;
+  align-items: center;
+}
+.main .aboutMe .card ul {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .aboutMe .card-item {
+  width: 274px;
+  padding: 16px;
+  border: 1px solid #E3E3E3;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+.main .aboutMe .card-item :first-child {
+  font-size: 20px;
+}
+.main .aboutMe .card-item h3 {
+  font-size: 20px;
+  margin: 4px 0;
+}
+.main .aboutMe .article {
+  width: 526px;
+  margin-left: 134px;
+}
+.main .aboutMe .article h2 {
+  margin-bottom: 36px;
+}
+.main .aboutMe .article p {
+  font-size: 24px;
 }
 
 .footer {

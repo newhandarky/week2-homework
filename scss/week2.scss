@@ -6,6 +6,7 @@
 // 變數
 $basic-font-size: 16px;
 $basic-block-padding: 160px;
+$h3-font-size: $basic-font-size * 1.25;
 // 顏色
 $main-color: black;
 $header-link-color:#D1D1D1;
@@ -19,7 +20,7 @@ $light-color: #FFFFFF;
     font-size:  $basic-font-size * 4;;
 }
 .basicPadding{
-    padding: 160px 0;
+    padding: $basic-block-padding 0;
 }
 .item-margin{
     margin: 0 12px;
@@ -29,6 +30,7 @@ $light-color: #FFFFFF;
 body{
     line-height: 1.5;
     font-family: 'Bruno Ace SC', cursive, serif;
+    // box-sizing: border-box;
     a{
         text-decoration: none;
     }
@@ -36,7 +38,6 @@ body{
         vertical-align: top;
     }
 }
-
 
 .container{
     max-width: 1920px;
@@ -91,7 +92,6 @@ body{
     }
     .introduction{
         background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
-        padding: $basic-block-padding 0;
         justify-content: center;
         .article{
             width: 526px;
@@ -103,6 +103,42 @@ body{
                 color: $light-color;
                 font-size: 24px;
                 margin-bottom: 32px;
+            }
+        }
+    }
+    .aboutMe{
+        justify-content: center;
+        .card{
+            width: 636px;
+            align-items: center;
+            ul{
+                justify-content: space-between;
+                
+                flex-wrap: wrap;
+            }
+            &-item{
+                width: 274px;
+                padding: 16px;
+                border: 1px solid #E3E3E3;
+                box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);  
+                margin-bottom: 24px;
+                :first-child{
+                    font-size: $h3-font-size;
+                }
+                h3{
+                    font-size: $h3-font-size;
+                    margin: 4px 0;
+                }
+            }
+        }
+        .article{
+            width: 526px;
+            margin-left: 134px;
+            h2{
+                margin-bottom: 36px;
+            }
+            p{
+                font-size: $basic-font-size * 1.5;
             }
         }
     }
