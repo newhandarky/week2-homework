@@ -1,0 +1,29 @@
+body {
+    line-height: 1.5;
+    font-family: 'Bruno Ace SC', cursive, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.title {
+    font-size: $basic-font-size * 4;
+    ;
+}
+
+.basicPadding {
+    padding: $basic-block-padding 0;
+}
+
+.item-margin {
+    margin: 0 12px;
+}

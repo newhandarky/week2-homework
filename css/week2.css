@@ -53,6 +53,19 @@ table {
   border-spacing: 0;
 }
 
+body {
+  line-height: 1.5;
+  font-family: "Bruno Ace SC", cursive, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
 .d-flex {
   display: flex;
 }
@@ -67,21 +80,6 @@ table {
 
 .item-margin {
   margin: 0 12px;
-}
-
-body {
-  line-height: 1.5;
-  font-family: "Bruno Ace SC", cursive, serif;
-}
-body a {
-  text-decoration: none;
-}
-body img {
-  vertical-align: top;
-}
-
-.container {
-  max-width: 1920px;
 }
 
 .header {
@@ -102,6 +100,15 @@ body img {
 }
 .header a {
   color: #D1D1D1;
+}
+
+.footer {
+  background: black;
+  padding: 40px 0;
+}
+.footer p {
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .hello {
@@ -232,13 +239,4 @@ body img {
 }
 .myProjects .photo :first-child {
   margin-right: 24px;
-}
-
-.footer {
-  background: black;
-  padding: 40px 0;
-}
-.footer p {
-  text-align: center;
-  color: #FFFFFF;
 }/*# sourceMappingURL=week2.css.map */
