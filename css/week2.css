@@ -104,82 +104,133 @@ body img {
   color: #D1D1D1;
 }
 
-.main .hello {
+.hello {
   background: black;
   justify-content: center;
   padding: 72px 0;
 }
-.main .hello .article {
+.hello .article {
   width: 636px;
   flex-direction: column;
   justify-content: center;
 }
-.main .hello .article p {
+.hello .article p {
   color: #FFFFFF;
 }
-.main .hello .article h1 {
+.hello .article h1 {
   color: #00FFA3;
   font-size: 128px;
   text-align: end;
 }
-.main .hello .article .contact {
+.hello .article .contact {
   margin-left: auto;
 }
-.main .hello .article a {
+.hello .article a {
   background: #FFFFFF;
   padding: 12px 24px;
   border-radius: 32px;
 }
-.main .introduction {
+
+.introduction {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
   justify-content: center;
 }
-.main .introduction .article {
+.introduction .article {
   width: 526px;
 }
-.main .introduction .article h2 {
+.introduction .article h2 {
   color: #FFFFFF;
   margin-bottom: 36px;
 }
-.main .introduction .article p {
+.introduction .article p {
   color: #FFFFFF;
   font-size: 24px;
   margin-bottom: 32px;
 }
-.main .aboutMe {
+
+.aboutMe {
   justify-content: center;
 }
-.main .aboutMe .card {
+.aboutMe .card {
   width: 636px;
   align-items: center;
 }
-.main .aboutMe .card ul {
+.aboutMe .card ul {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.main .aboutMe .card-item {
+.aboutMe .card-item {
   width: 274px;
   padding: 16px;
   border: 1px solid #E3E3E3;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
   margin-bottom: 24px;
 }
-.main .aboutMe .card-item :first-child {
+.aboutMe .card-item :first-child {
   font-size: 20px;
 }
-.main .aboutMe .card-item h3 {
+.aboutMe .card-item h3 {
   font-size: 20px;
   margin: 4px 0;
 }
-.main .aboutMe .article {
+.aboutMe .article {
   width: 526px;
   margin-left: 134px;
 }
-.main .aboutMe .article h2 {
+.aboutMe .article h2 {
   margin-bottom: 36px;
 }
-.main .aboutMe .article p {
+.aboutMe .article p {
   font-size: 24px;
+}
+
+.cocntactMe {
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+.cocntactMe h2 {
+  color: #FFFFFF;
+  margin-right: 16px;
+  padding: 129px 0;
+}
+.cocntactMe .sns {
+  margin-left: 113px;
+}
+.cocntactMe .photo {
+  align-items: center;
+}
+
+.myProjects {
+  justify-content: center;
+}
+.myProjects .side {
+  margin-right: 24px;
+  margin-top: auto;
+}
+.myProjects .card {
+  justify-content: space-between;
+}
+.myProjects .projects h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.myProjects .projects .article {
+  flex-direction: column;
+  width: 636px;
+  justify-content: space-between;
+}
+.myProjects .projects .article a {
+  padding: 12px 24px;
+  background: black;
+  border-radius: 32px;
+  color: #FFFFFF;
+}
+.myProjects .photo {
+  margin-top: 28px;
+}
+.myProjects .photo :first-child {
+  margin-right: 24px;
 }
 
 .footer {
