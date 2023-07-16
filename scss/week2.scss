@@ -164,6 +164,9 @@
             flex-direction: column;
             width: 636px;
             justify-content: space-between;
+            .link{
+                padding-bottom: 8px;
+            }
             a{
                 padding: 12px 24px;
                 background: $main-color;

@@ -219,6 +219,9 @@ img {
   width: 636px;
   justify-content: space-between;
 }
+.myProjects .projects .article .link {
+  padding-bottom: 8px;
+}
 .myProjects .projects .article a {
   padding: 12px 24px;
   background: black;
