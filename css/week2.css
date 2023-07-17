@@ -70,8 +70,16 @@ img {
   display: flex;
 }
 
+.jc-center {
+  justify-content: center;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
 .title {
-  font-size: 64px;
+  font-size: 4rem;
 }
 
 .basicPadding {
@@ -82,68 +90,74 @@ img {
   margin: 0 12px;
 }
 
-.header {
+.dark {
+  color: black;
+}
+
+.light {
+  color: #FFFFFF;
+}
+
+.bg-dark {
   background: black;
+}
+
+.header {
   padding-top: 40px;
 }
-.header ul {
-  justify-content: center;
-}
-.header li {
+.header .nav-li {
   width: 306px;
   margin-right: 61px;
 }
-.header li:last-child {
+.header .nav-li:last-child {
   width: 196px;
   text-align: end;
   margin-right: 0;
 }
-.header a {
+.header .nav-li .nav-link {
   color: #D1D1D1;
+}
+.header .nav-li .nav-link:hover {
+  color: #00FFA3;
 }
 
 .hello {
-  background: black;
-  justify-content: center;
   padding: 72px 0;
 }
-.hello .article {
+.hello-article {
   width: 636px;
-  flex-direction: column;
-  justify-content: center;
 }
-.hello .article p {
-  color: #FFFFFF;
-}
-.hello .article h1 {
+.hello-article h1 {
   color: #00FFA3;
-  font-size: 128px;
+  font-size: 8rem;
   text-align: end;
 }
-.hello .article .contact {
+.hello-contact {
   margin-left: auto;
 }
-.hello .article a {
+.hello-link {
   background: #FFFFFF;
   padding: 12px 24px;
   border-radius: 32px;
   color: black;
+  display: inline-block;
+  text-align: end;
+}
+.hello-link:hover {
+  background: #00FFA3;
 }
 
-.introduction {
+.block2 {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
-  justify-content: center;
 }
-.introduction .article {
+.block2-article {
   width: 526px;
 }
-.introduction .article h2 {
-  color: #FFFFFF;
+.block2-article-h2 {
   margin-bottom: 36px;
 }
-.introduction .article p {
-  color: #FFFFFF;
-  font-size: 24px;
+.block2-article-p {
+  font-size: 1.5rem;
   margin-bottom: 32px;
 }
 
@@ -161,15 +175,15 @@ img {
 .aboutMe .card-item {
   width: 274px;
   padding: 16px;
-  border: 1px solid #E3E3E3;
+  border: 1px solid #e3e3e3;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
   margin-bottom: 24px;
 }
 .aboutMe .card-item :first-child {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .aboutMe .card-item h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 4px 0;
 }
 .aboutMe .article {
@@ -180,7 +194,7 @@ img {
   margin-bottom: 36px;
 }
 .aboutMe .article p {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .cocntactMe {

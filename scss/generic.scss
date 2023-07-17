@@ -15,9 +15,16 @@ img {
     display: flex;
 }
 
+.jc-center{
+    justify-content: center;
+}
+
+.fd-column{
+    flex-direction: column;
+}
+
 .title {
     font-size: $basic-font-size * 4;
-    ;
 }
 
 .basicPadding {
@@ -26,4 +33,16 @@ img {
 
 .item-margin {
     margin: 0 12px;
+}
+
+.dark{
+    color: $dark-color;
+}
+
+.light{
+    color: $light-color;
+}
+
+.bg-dark{
+    background: $dark-color;
 }

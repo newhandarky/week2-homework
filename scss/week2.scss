@@ -1,18 +1,13 @@
 // 各類import
 @import "reset";
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro&display=swap");
 @import "variable";
 @import "generic";
 
 .header {
-    background: $main-color;
     padding-top: 40px;
 
-    ul {
-        justify-content: center;
-    }
-
-    li {
+    .nav-li {
         width: 306px;
         margin-right: 61px;
 
@@ -21,61 +16,59 @@
             text-align: end;
             margin-right: 0;
         }
-    }
 
-    a {
-        color: $header-link-color;
+        .nav-link {
+            color: $nav-link-color;
+
+            &:hover {
+                color: $active-color;
+            }
+        }
     }
 }
 
 .hello {
-    background: $main-color;
-    justify-content: center;
     padding: $basic-block-padding * 0.45 0;
 
-    .article {
+    &-article {
         width: 636px;
-        flex-direction: column;
-        justify-content: center;
-
-        p {
-            color: $light-color;
-        }
 
         h1 {
-            color: #00FFA3;
+            color: $active-color;
             font-size: $basic-font-size * 8;
             text-align: end;
         }
+    }
 
-        .contact {
-            margin-left: auto;
-        }
+    &-contact {
+        margin-left: auto;
+    }
 
-        a {
-            background: $light-color;
-            padding: 12px 24px;
-            border-radius: 32px;
-            color: $main-color;
+    &-link {
+        background: $light-color;
+        padding: 12px 24px;
+        border-radius: 32px;
+        color: $dark-color;
+        display: inline-block;
+        text-align: end;
+        &:hover{
+            background: $active-color;
         }
     }
 }
 
-.introduction {
+.block2 {
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
-    justify-content: center;
 
-    .article {
+    &-article {
         width: 526px;
 
-        h2 {
-            color: $light-color;
+        &-h2 {
             margin-bottom: 36px;
         }
 
-        p {
-            color: $light-color;
-            font-size: 24px;
+        &-p {
+            font-size: $basic-font-size*1.5;
             margin-bottom: 32px;
         }
     }
@@ -96,16 +89,16 @@
         &-item {
             width: 274px;
             padding: 16px;
-            border: 1px solid #E3E3E3;
+            border: 1px solid #e3e3e3;
             box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
             margin-bottom: 24px;
 
             :first-child {
-                font-size: $h3-font-size;
+                font-size: $basic-font-size * 1.25;
             }
 
             h3 {
-                font-size: $h3-font-size;
+                font-size: $basic-font-size * 1.25;
                 margin: 4px 0;
             }
         }
@@ -145,38 +138,45 @@
     }
 }
 
-.myProjects{
+.myProjects {
     justify-content: center;
-    .side{
+
+    .side {
         margin-right: 24px;
         margin-top: auto;
     }
-    .card{
+
+    .card {
         justify-content: space-between;
-        
     }
-    .projects{
-        h2{
+
+    .projects {
+        h2 {
             text-align: center;
             margin-bottom: 16px;
         }
-        .article{
+
+        .article {
             flex-direction: column;
             width: 636px;
             justify-content: space-between;
-            .link{
+
+            .link {
                 padding-bottom: 8px;
             }
-            a{
+
+            a {
                 padding: 12px 24px;
-                background: $main-color;
+                background: $dark-color;
                 border-radius: 32px;
                 color: $light-color;
             }
         }
     }
-    .photo{
+
+    .photo {
         margin-top: 28px;
+
         :first-child {
             margin-right: 24px;
         }
@@ -184,7 +184,7 @@
 }
 
 .footer {
-    background: $main-color;
+    background: $dark-color;
     padding: 40px 0;
 
     p {
