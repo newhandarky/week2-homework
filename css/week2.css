@@ -82,6 +82,10 @@ img {
   align-items: center;
 }
 
+.ta-center {
+  text-align: center;
+}
+
 .fd-column {
   flex-direction: column;
 }
@@ -155,9 +159,7 @@ img {
   background: #FFFFFF;
   padding: 12px 24px;
   border-radius: 32px;
-  color: black;
   display: block;
-  text-align: end;
 }
 .block1-link:hover {
   background: #00FFA3;
@@ -236,46 +238,35 @@ img {
   margin-left: 8px;
 }
 
-.myProjects {
-  justify-content: center;
-}
-.myProjects .side {
+.block5-side {
   margin-right: 24px;
   margin-top: auto;
 }
-.myProjects .card {
-  justify-content: space-between;
-}
-.myProjects .projects h2 {
-  text-align: center;
+.block5-h2 {
   margin-bottom: 16px;
 }
-.myProjects .projects .article {
-  flex-direction: column;
+.block5-article {
   width: 636px;
-  justify-content: space-between;
 }
-.myProjects .projects .article .link {
-  padding-bottom: 8px;
+.block5-tconack :hover {
+  background: #00FFA3;
 }
-.myProjects .projects .article a {
+.block5-link {
   padding: 12px 24px;
-  background: black;
   border-radius: 32px;
-  color: #FFFFFF;
+  display: inline-block;
 }
-.myProjects .photo {
+.block5-arrow {
+  margin-left: 4px;
+}
+.block5-photo {
   margin-top: 28px;
 }
-.myProjects .photo :first-child {
+.block5-photo :first-child {
   margin-right: 24px;
 }
 
 .footer {
   background: black;
   padding: 40px 0;
-}
-.footer p {
-  text-align: center;
-  color: #FFFFFF;
 }/*# sourceMappingURL=week2.css.map */
