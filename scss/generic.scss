@@ -19,12 +19,23 @@ img {
     justify-content: center;
 }
 
+.jc-between{
+    justify-content: space-between;
+}
+
+.ai-center{
+    align-items: center;
+}
 .fd-column{
     flex-direction: column;
 }
 
 .title {
     font-size: $basic-font-size * 4;
+}
+
+.medium{
+    font-size: $basic-font-size * 1.25;
 }
 
 .basicPadding {
@@ -45,4 +56,8 @@ img {
 
 .bg-dark{
     background: $dark-color;
+}
+
+.mb-24{
+    margin-bottom: 24px;
 }

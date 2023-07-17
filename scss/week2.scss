@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro&display=swap");
 @import "variable";
 @import "generic";
+@import "mixin";
 
 .header {
     padding-top: 40px;
@@ -27,7 +28,7 @@
     }
 }
 
-.hello {
+.block1 {
     padding: $basic-block-padding * 0.45 0;
 
     &-article {
@@ -49,7 +50,7 @@
         padding: 12px 24px;
         border-radius: 32px;
         color: $dark-color;
-        display: inline-block;
+        display: block;
         text-align: end;
         &:hover{
             background: $active-color;
@@ -74,15 +75,11 @@
     }
 }
 
-.aboutMe {
-    justify-content: center;
-
+.block3 {
     .card {
         width: 636px;
-        align-items: center;
 
-        ul {
-            justify-content: space-between;
+        &-box {
             flex-wrap: wrap;
         }
 
@@ -91,50 +88,60 @@
             padding: 16px;
             border: 1px solid #e3e3e3;
             box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
-            margin-bottom: 24px;
 
-            :first-child {
-                font-size: $basic-font-size * 1.25;
-            }
-
-            h3 {
-                font-size: $basic-font-size * 1.25;
-                margin: 4px 0;
-            }
+        }
+        &-h3 {
+            margin: 4px 0;
         }
     }
 
-    .article {
+    .block3-article {
         width: 526px;
         margin-left: 134px;
 
-        h2 {
+        .block3-h2 {
             margin-bottom: 36px;
         }
 
-        p {
+        :last-child {
             font-size: $basic-font-size * 1.5;
         }
     }
 }
 
-.cocntactMe {
-    justify-content: center;
-    align-items: center;
+.block4 {
     background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
 
-    h2 {
-        color: $light-color;
-        margin-right: 16px;
+    .block4-h2 {
         padding: 129px 0;
+        margin-right: 113px;
+        .arrow{
+            margin-left: 16px;
+        }
     }
 
     .sns {
-        margin-left: 113px;
+        &-link{
+            @include img-hide-text;
+            :hover{
+                @include img-hover-zoom-in;
+            }
+        }
     }
 
     .photo {
-        align-items: center;
+        display: block;
+        width: 162px;
+        height: 162px;
+    }
+    .discord{
+        width: 152px;
+        height: 152px;
+        padding: 20px;
+    }
+    .message{
+        // 視覺上調整
+        margin-left: 8px;
     }
 }
 

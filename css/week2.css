@@ -74,12 +74,24 @@ img {
   justify-content: center;
 }
 
+.jc-between {
+  justify-content: space-between;
+}
+
+.ai-center {
+  align-items: center;
+}
+
 .fd-column {
   flex-direction: column;
 }
 
 .title {
   font-size: 4rem;
+}
+
+.medium {
+  font-size: 1.25rem;
 }
 
 .basicPadding {
@@ -102,6 +114,10 @@ img {
   background: black;
 }
 
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 .header {
   padding-top: 40px;
 }
@@ -121,29 +137,29 @@ img {
   color: #00FFA3;
 }
 
-.hello {
+.block1 {
   padding: 72px 0;
 }
-.hello-article {
+.block1-article {
   width: 636px;
 }
-.hello-article h1 {
+.block1-article h1 {
   color: #00FFA3;
   font-size: 8rem;
   text-align: end;
 }
-.hello-contact {
+.block1-contact {
   margin-left: auto;
 }
-.hello-link {
+.block1-link {
   background: #FFFFFF;
   padding: 12px 24px;
   border-radius: 32px;
   color: black;
-  display: inline-block;
+  display: block;
   text-align: end;
 }
-.hello-link:hover {
+.block1-link:hover {
   background: #00FFA3;
 }
 
@@ -161,57 +177,63 @@ img {
   margin-bottom: 32px;
 }
 
-.aboutMe {
-  justify-content: center;
-}
-.aboutMe .card {
+.block3 .card {
   width: 636px;
-  align-items: center;
 }
-.aboutMe .card ul {
-  justify-content: space-between;
+.block3 .card-box {
   flex-wrap: wrap;
 }
-.aboutMe .card-item {
+.block3 .card-item {
   width: 274px;
   padding: 16px;
   border: 1px solid #e3e3e3;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
-  margin-bottom: 24px;
 }
-.aboutMe .card-item :first-child {
-  font-size: 1.25rem;
-}
-.aboutMe .card-item h3 {
-  font-size: 1.25rem;
+.block3 .card-h3 {
   margin: 4px 0;
 }
-.aboutMe .article {
+.block3 .block3-article {
   width: 526px;
   margin-left: 134px;
 }
-.aboutMe .article h2 {
+.block3 .block3-article .block3-h2 {
   margin-bottom: 36px;
 }
-.aboutMe .article p {
+.block3 .block3-article :last-child {
   font-size: 1.5rem;
 }
 
-.cocntactMe {
-  justify-content: center;
-  align-items: center;
+.block4 {
   background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
 }
-.cocntactMe h2 {
-  color: #FFFFFF;
-  margin-right: 16px;
+.block4 .block4-h2 {
   padding: 129px 0;
+  margin-right: 113px;
 }
-.cocntactMe .sns {
-  margin-left: 113px;
+.block4 .block4-h2 .arrow {
+  margin-left: 16px;
 }
-.cocntactMe .photo {
-  align-items: center;
+.block4 .sns-link {
+  text-indent: 150%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.block4 .sns-link :hover {
+  transition: all 0.5s ease-out;
+  transform: scale(1.1, 1.1);
+}
+.block4 .photo {
+  display: block;
+  width: 162px;
+  height: 162px;
+}
+.block4 .discord {
+  width: 152px;
+  height: 152px;
+  padding: 20px;
+}
+.block4 .message {
+  margin-left: 8px;
 }
 
 .myProjects {
