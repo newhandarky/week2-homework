@@ -157,8 +157,8 @@
         width: 636px;
 
     }
-    &-tconack{
-        :hover{
+    &-contack{
+        &:hover{
             background: $active-color;
         }
     }
