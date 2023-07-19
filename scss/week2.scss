@@ -8,17 +8,19 @@
 .header {
     padding-top: 40px;
 
-    .nav-li {
-        width: 306px;
-        margin-right: 61px;
-
-        &:last-child {
-            width: 196px;
-            text-align: end;
-            margin-right: 0;
+    .nav {
+        &-li{
+            width: 306px;
+            margin-right: 61px;
+    
+            &:last-child {
+                width: 196px;
+                text-align: end;
+                margin-right: 0;
+            }
         }
 
-        .nav-link {
+        &-link {
             color: $nav-link-color;
 
             &:hover {
@@ -93,7 +95,7 @@
         }
     }
 
-    .block3-article {
+    &-article {
         width: 526px;
         margin-left: 134px;
 
@@ -110,7 +112,7 @@
 .block4 {
     background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
 
-    .block4-h2 {
+    &-h2 {
         padding: 129px 0;
         margin-right: 113px;
         .arrow{
@@ -153,7 +155,6 @@
     &-link{
         padding: 12px 24px;
         border-radius: 32px;
-        position: relative;
         &:hover{
             background: $active-color;
             color: $dark-color;
@@ -165,8 +166,6 @@
 
     &-arrow{
         @include img-hide-text;
-        position: relative;
-        top: 6px;
         display: inline-block;
         height: 24px;
         width: 24px;

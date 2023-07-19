@@ -138,10 +138,10 @@ img {
   text-align: end;
   margin-right: 0;
 }
-.header .nav-li .nav-link {
+.header .nav-link {
   color: #D1D1D1;
 }
-.header .nav-li .nav-link:hover {
+.header .nav-link:hover {
   color: #00FFA3;
 }
 
@@ -198,25 +198,25 @@ img {
 .block3 .card-h3 {
   margin: 4px 0;
 }
-.block3 .block3-article {
+.block3-article {
   width: 526px;
   margin-left: 134px;
 }
-.block3 .block3-article .block3-h2 {
+.block3-article .block3-h2 {
   margin-bottom: 36px;
 }
-.block3 .block3-article :last-child {
+.block3-article :last-child {
   font-size: 1.5rem;
 }
 
 .block4 {
   background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
 }
-.block4 .block4-h2 {
+.block4-h2 {
   padding: 129px 0;
   margin-right: 113px;
 }
-.block4 .block4-h2 .arrow {
+.block4-h2 .arrow {
   margin-left: 16px;
 }
 .block4 .sns-link {
@@ -248,7 +248,6 @@ img {
 .block5-link {
   padding: 12px 24px;
   border-radius: 32px;
-  position: relative;
 }
 .block5-link:hover {
   background: #00FFA3;
@@ -261,8 +260,6 @@ img {
   text-indent: 150%;
   overflow: hidden;
   white-space: nowrap;
-  position: relative;
-  top: 6px;
   display: inline-block;
   height: 24px;
   width: 24px;
