@@ -122,7 +122,8 @@
         &-link{
             @include img-hide-text;
             :hover{
-                @include img-hover-zoom-in;
+                // @include img-hover-zoom-in;
+                box-shadow: 0 0 16px 3px rgba(144, 148, 255, .9);
             }
         }
     }

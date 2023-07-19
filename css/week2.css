@@ -221,8 +221,7 @@ img {
   white-space: nowrap;
 }
 .block4 .sns-link :hover {
-  transition: all 0.5s ease-out;
-  transform: scale(1.1, 1.1);
+  box-shadow: 0 0 16px 3px rgba(144, 148, 255, 0.9);
 }
 .block4 .photo {
   display: block;
@@ -248,7 +247,7 @@ img {
 .block5-article {
   width: 636px;
 }
-.block5-tconack :hover {
+.block5-contack:hover {
   background: #00FFA3;
 }
 .block5-link {
