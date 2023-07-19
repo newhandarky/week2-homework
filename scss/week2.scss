@@ -122,8 +122,8 @@
         &-link{
             @include img-hide-text;
             :hover{
-                // @include img-hover-zoom-in;
-                box-shadow: 0 0 16px 3px rgba(144, 148, 255, .9);
+                box-shadow: 0 0 10px 3px rgba(144, 148, 255, .9);
+                border-radius: 40px;
             }
         }
     }
@@ -132,15 +132,7 @@
         display: block;
         width: 162px;
         height: 162px;
-    }
-    .discord{
-        width: 152px;
-        height: 152px;
-        padding: 20px;
-    }
-    .message{
-        // 視覺上調整
-        margin-left: 8px;
+        margin: 10px;
     }
 }
 
@@ -156,20 +148,29 @@
 
     &-article {
         width: 636px;
-
-    }
-    &-contack{
-        &:hover{
-            background: $active-color;
-        }
     }
     
-    &-link {
+    &-link{
         padding: 12px 24px;
         border-radius: 32px;
-        display: inline-block;
+        position: relative;
+        &:hover{
+            background: $active-color;
+            color: $dark-color;
+            .block5-arrow{
+                background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/arrow_outward.png?raw=true");
+            }
+        }
     }
+
     &-arrow{
+        @include img-hide-text;
+        position: relative;
+        top: 6px;
+        display: inline-block;
+        height: 24px;
+        width: 24px;
+        background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/arrow_outward-white.png?raw=true");
         margin-left: 4px;
     }
 

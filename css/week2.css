@@ -118,8 +118,12 @@ img {
   background: black;
 }
 
-.mb-24 {
+.mb-6 {
   margin-bottom: 24px;
+}
+
+.mr-3 {
+  margin-right: 12px;
 }
 
 .header {
@@ -221,20 +225,14 @@ img {
   white-space: nowrap;
 }
 .block4 .sns-link :hover {
-  box-shadow: 0 0 16px 3px rgba(144, 148, 255, 0.9);
+  box-shadow: 0 0 10px 3px rgba(144, 148, 255, 0.9);
+  border-radius: 40px;
 }
 .block4 .photo {
   display: block;
   width: 162px;
   height: 162px;
-}
-.block4 .discord {
-  width: 152px;
-  height: 152px;
-  padding: 20px;
-}
-.block4 .message {
-  margin-left: 8px;
+  margin: 10px;
 }
 
 .block5-side {
@@ -247,15 +245,28 @@ img {
 .block5-article {
   width: 636px;
 }
-.block5-contack:hover {
-  background: #00FFA3;
-}
 .block5-link {
   padding: 12px 24px;
   border-radius: 32px;
-  display: inline-block;
+  position: relative;
+}
+.block5-link:hover {
+  background: #00FFA3;
+  color: black;
+}
+.block5-link:hover .block5-arrow {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/arrow_outward.png?raw=true");
 }
 .block5-arrow {
+  text-indent: 150%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  top: 6px;
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/arrow_outward-white.png?raw=true");
   margin-left: 4px;
 }
 .block5-photo {
